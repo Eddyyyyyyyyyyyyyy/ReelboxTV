@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="assets/logo-banner.jpg" alt="Reelbox" width="520">
   <h1>Reelbox</h1>
   <p>为电视而生：极简界面、丝滑焦点、一面壮观的 4K 海报墙。</p>
   <p>作者：<a href="https://github.com/Eddyyyyyyyyyyyyyy">Eddy</a> · 平台：Android TV · 版本见 <a href="https://github.com/Eddyyyyyyyyyyyyyy/Reelbox/releases">Releases</a></p>
@@ -32,6 +33,28 @@ Reelbox 用 Kotlin、Jetpack Compose 与原生 View 实现，不预装任何片�
 ![片库](assets/screenshots/library.jpg)
 
 > 截图中的影片名称与海报来自演示用的个人片库，仅用于展示界面，不代表本项目内置或提供这些内容。
+
+### 更多界面
+
+| 首页导航 | 详情页 |
+| --- | --- |
+| ![](assets/screenshots/home-nav.jpg) | ![](assets/screenshots/detail-actions.jpg) |
+
+| 更换海报 | 选集列表 |
+| --- | --- |
+| ![](assets/screenshots/poster-picker.jpg) | ![](assets/screenshots/episode-list.jpg) |
+
+| 播放器面板 | 播放中选集 |
+| --- | --- |
+| ![](assets/screenshots/player-panel.jpg) | ![](assets/screenshots/player-inline.jpg) |
+
+### UI 设计上的几个取舍
+
+- **遥控器优先**：方向键只走到视觉上最近的一行，不串行；从播放页返回，焦点回到刚才那一集，不用重新找位置。
+- **10 英尺可读性**：标题 44sp、播放按钮 260×46dp、剧集卡 180×100dp，按 1920×1080 电视实测尺寸定的，不是手机 UI 放大。
+- **焦点态统一**：全站白 2dp 描边、不缩放；白底按钮聚焦时换强调色，避免出现"白底白框看不见"的情况。
+- **信息密度可控**：详情页两栏布局，左侧标题+播放+线路，右侧元信息+简介；剧集横轨用 Leanback 原生 View，100 集只组合视口内 6~7 张卡，连按不卡。
+- **海报不将就**：在线源和片库共用同一面海报墙，海报或横图不满意可直接换，候选图按来源分组展示。
 
 ## 能做什么
 
