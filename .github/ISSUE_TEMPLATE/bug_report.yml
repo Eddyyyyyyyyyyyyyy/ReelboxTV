@@ -1,0 +1,110 @@
+name: Bug 报告
+description: 播放、焦点、界面、片库等异常
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请确认：**不要附带订阅地址、Cookie、账号、二维码或任何私有令牌**。
+
+        安全问题请走 [Security → Report a vulnerability](https://github.com/Eddyyyyyyyyyyyyyy/Reelbox/security/advisories/new)，不要开公开 Issue。
+
+  - type: input
+    id: device
+    attributes:
+      label: 设备型号
+      placeholder: 小米电视 4A 43 寸 / N1 盒子
+    validations:
+      required: true
+
+  - type: input
+    id: android
+    attributes:
+      label: Android 版本
+      placeholder: Android 14
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Reelbox 版本
+      description: 设置 → 关于 里可以看到，或者 APK 文件名里的 vc 号
+      placeholder: 0.3.70 (vc70)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题出现在哪个部分
+      options:
+        - 首页 / 焦点导航
+        - 在线源（TVBox 订阅）
+        - 片库（Alist / WebDAV / Emby）
+        - 搜索
+        - 详情页
+        - 播放器（画面 / 声音 / 字幕 / 倍速）
+        - 设置
+        - 安装 / 启动
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 越具体越好，遥控器按了哪些键也写上
+      placeholder: |
+        1. 打开 App，焦点在首页
+        2. 按 ↓ 进入海报墙，连按 → 三次
+        3. 按 OK 进详情页
+        4. 此时画面黑屏，约 2 秒后回到首页
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      placeholder: 应该正常进入详情页
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      placeholder: 黑屏 2 秒后闪退回首页
+    validations:
+      required: true
+
+  - type: textarea
+    id: frequency
+    attributes:
+      label: 出现频率
+      description: 每次都能复现？还是偶发？大概几次出一次？
+      placeholder: 4 次里出 3 次
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: 日志（可选）
+      description: |
+        用 `adb logcat -d > log.txt` 抓取后粘贴关键片段。
+        **粘贴前请删掉其中的订阅地址、Cookie、账号。**
+      render: shell
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认项
+      options:
+        - label: 我已确认这里没有附带订阅地址、Cookie、账号或二维码
+          required: true
+        - label: 我使用的 Reelbox 是仓库 Release 里的版本，不是自行修改的构建
+          required: true
