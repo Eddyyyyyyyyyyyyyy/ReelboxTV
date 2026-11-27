@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      基础主题：
+      - 用 NoActionBar，避免 TV 端出现系统标题栏
+      - windowBackground 用纯色，不用 drawable（drawable 在启动时 inflate 有风险）
+      - api23+ 的属性放进 values-v23，避免老系统解析警告
+    -->
+    <style name="Theme.Reelbox" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/rx_backdrop</item>
+        <item name="android:colorBackground">@color/rx_backdrop</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <!--
+      启动主题：只换 windowBackground。
+      注意这里用 @drawable/splash_background，但该 drawable 已经改成
+      安全的 layer-list（不含 <bitmap src=adaptive-icon>），不会再崩。
+    -->
+    <style name="Theme.Reelbox.Splash" parent="Theme.Reelbox">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>

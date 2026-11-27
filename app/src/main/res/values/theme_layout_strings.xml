@@ -1,0 +1,8 @@
+<resources>
+    <string name="theme_layout_title">界面风格</string>
+    <string name="theme_layout_original">经典</string>
+    <string name="theme_layout_gallery">沉浸画廊</string>
+    <string name="theme_layout_sidebar">侧栏影院</string>
+    <string name="theme_layout_topbar">顶栏简约</string>
+    <string name="theme_layout_help">返回浏览页后应用新的首页、详情和导航布局；播放、片库规则、观看记录及设置共用，不改变账号与资源。</string>
+</resources>

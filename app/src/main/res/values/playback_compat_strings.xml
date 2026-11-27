@@ -1,0 +1,4 @@
+<resources>
+    <string name="playback_parse_failed">解析器未返回可播放地址：%1$s</string>
+    <string name="playback_error_back_hint">按返回键退出，换一条线路再试</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="directory_preview_title">目录规则变更预览</string>
+    <string name="directory_preview_target">%1$s\n%2$s</string>
+    <string name="directory_preview_path">规则目录：%1$s</string>
+    <string name="directory_preview_cached_only">仅预计当前缓存中的变化；不联网扫描，不删除视频文件。</string>
+    <string name="directory_preview_counts">目录内缓存视频 %1$d 个 · 全片库海报 %2$d → %3$d（新增 %4$d / 移除 %5$d）</string>
+    <string name="directory_preview_ownership_counts">全片库视频归属变更 %1$d 个 · 归属不变 %2$d 个</string>
+    <string name="directory_preview_cache_boundary">仅按当前缓存及现有规则计算，不联网扫描。统计覆盖整个缓存片库，因为子目录规则也可能影响父目录和相邻作品。实际远端新增、删除或改名不在本次预览内；海报统计指作品条目，不代表封面图片已下载。</string>
+    <string name="directory_preview_partial">结果不完整：缓存含 %1$d 个扫描失败目录、%2$d 个历史保留视频。未读取到的内容无法预计；保留视频可能已变动，0 个缓存视频不代表远端为空。</string>
+    <string name="directory_preview_scan_error">最近一次扫描未完成：%1$s</string>
+    <string name="directory_preview_failure">扫描失败：%1$s\n%2$s</string>
+    <string name="directory_preview_unchanged">当前缓存中的海报和视频归属均不变。确认后仍会保存所选规则，后续扫描结果可能不同。</string>
+    <string name="directory_preview_added">新增作品海报：%1$s\n%2$s\n包含 %3$d 个缓存视频</string>
+    <string name="directory_preview_removed">移除作品海报：%1$s\n%2$s\n原含 %3$d 个缓存视频；视频文件不会删除</string>
+    <string name="directory_preview_moved">视频：%1$s\n原属：%2$s（%3$s）\n改属：%4$s（%5$s）</string>
+    <string name="directory_preview_calculating">正在计算缓存中的预计变化…</string>
+    <string name="directory_preview_scan_running">片库正在扫描，暂不能预览和保存。请在扫描结束后重试。</string>
+    <string name="directory_preview_stale">缓存、扫描状态或目录规则已变化。请返回后重新选择模式，生成新的预览。</string>
+    <string name="directory_preview_cancel">取消</string>
+    <string name="directory_preview_apply">确认应用</string>
+    <string name="directory_preview_applying">正在应用目录规则…</string>
+</resources>

@@ -1,0 +1,1 @@
+export var gbkTool = { encode: function(s){return s;}, decode: function(s){return s;} }; export default {};

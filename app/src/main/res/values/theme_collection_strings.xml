@@ -1,0 +1,22 @@
+<resources>
+    <string name="theme_collection_title">我的片库</string>
+    <string name="theme_filter_all">全部</string>
+    <string name="theme_filter_movie">电影</string>
+    <string name="theme_filter_series">剧集</string>
+    <string name="theme_recent_added">最近加入</string>
+    <string name="theme_recent_watched">最近观看</string>
+    <string name="theme_continue_watching">继续观看</string>
+    <string name="theme_resume_label">接着看</string>
+    <string name="theme_sort_activity">最近活动 ↓</string>
+    <string name="theme_sort_title">片名</string>
+    <string name="theme_all_items">查看全部</string>
+    <string name="theme_all_library">全部影片</string>
+    <string name="theme_collection_empty">暂无符合当前筛选的已缓存片库资源，可到片库刷新或配置连接。</string>
+    <string name="theme_last_watched">上次观看至 %1$s</string>
+    <string name="theme_known_duration">%1$s / %2$s</string>
+    <string name="detail_play_time">已看 %1$s / 共 %2$s</string>
+    <string name="detail_play_time_unknown">已看 %1$s</string>
+    <string name="theme_all_versions">全部版本</string>
+    <string name="theme_duration_minutes">%1$d分钟</string>
+    <string name="theme_duration_hours_minutes">%1$d小时%2$d分钟</string>
+</resources>

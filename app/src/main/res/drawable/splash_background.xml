@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  启动背景：深色底 + 居中图标。
+
+  注意：这里不能用 <bitmap src="@mipmap/ic_launcher" /> ——
+  8.0+ 的 ic_launcher 是 <adaptive-icon>（XML 资源），
+  <bitmap> 只接受真实位图，会在 inflate 时报
+  "requires a valid 'src' attribute" 并直接崩溃启动。
+  改成 layer-list 直接 drawable 引用 + 显式宽高。
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/rx_backdrop" />
+    <item
+        android:drawable="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:width="160dp"
+        android:height="160dp" />
+</layer-list>

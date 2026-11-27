@@ -1,0 +1,1 @@
+export var 模板 = {}; export default {};

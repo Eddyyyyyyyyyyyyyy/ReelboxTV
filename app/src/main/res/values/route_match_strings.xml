@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="route_match_absent">此线路未找到对应剧集，请明确选择要播放的资源</string>
+    <string name="route_match_ambiguous">此线路有多个可能对应的资源，请明确选择</string>
+    <string name="route_match_player_absent">此线路未找到对应剧集，已保留当前播放；请返回详情页选择资源</string>
+    <string name="route_match_player_ambiguous">此线路有多个可能对应的资源，已保留当前播放；请返回详情页选择资源</string>
+    <string name="route_match_choose_episode">请选择剧集</string>
+    <string name="route_match_fallback_route">线路%1$d</string>
+    <string name="route_match_choice_failed">无法应用选择，请重试</string>
+</resources>
