@@ -3,7 +3,7 @@
   <h1>Reelbox</h1>
   <p>为电视而生：极简界面、丝滑焦点、一面壮观的 4K 海报墙。</p>
   <p>作者：<a href="https://github.com/Eddyyyyyyyyyyyyyy">Eddy</a> · 平台：Android TV · 版本见 <a href="https://github.com/Eddyyyyyyyyyyyyyy/Reelbox/releases">Releases</a></p>
-  <p><a href="#安装与开始使用">安装</a> · <a href="#构建">构建</a> · <a href="SECURITY.md">安全说明</a> · <a href="LICENSE">许可证</a></p>
+  <p><a href="#安装与开始使用">安装</a> · <a href="#构建">构建</a> · <a href="CHANGELOG.md">更新记录</a> · <a href="SECURITY.md">安全说明</a> · <a href="LICENSE">许可证</a></p>
 </div>
 
 > **本项目仅为播放与内容管理工具，不内置、不提供、不托管、不售卖任何影视资源，也不提供订阅地址、账号或会员权益。内容与配置需由用户自行合法获取，并确保拥有相应访问和使用权。**
